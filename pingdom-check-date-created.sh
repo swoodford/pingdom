@@ -1,5 +1,5 @@
 #!/bin/bash
-# This script lists creation date and time of all Pingdom checks
+# This script lists creation date and time of all Pingdom checks in your account
 # Run the script and append its output to a .csv file
 # Requires jq (http://stedolan.github.io/jq/download/)
 
