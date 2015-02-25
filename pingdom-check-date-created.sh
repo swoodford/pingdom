@@ -18,8 +18,7 @@ fi
 # Test if jq already installed, else install it
 command -v jq >/dev/null 2>&1 || {
   echo "Installing jq."
-  brew install jq
-  echo "jq installed."
+  brew install jq && echo "jq installed."
 }
 
 # Get list of all checks
