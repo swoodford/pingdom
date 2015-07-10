@@ -7,3 +7,4 @@ Pingdom API tools
 
 - **list-pingdom-probe-servers.sh** This script lists the IPs of all Pingdom probe servers
 - **pingdom-check-date-created.sh** This script lists creation date and time of all Pingdom checks in your account
+- **pingdom-probe-servers.txt** List of currently active Pingdom probe servers
