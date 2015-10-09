@@ -9,11 +9,6 @@ function check_command {
 	type -P $1 &>/dev/null || fail "Unable to find $1, please install it and run this script again."
 }
 
-function fail(){
-	tput setaf 1; echo "Failure: $*" && tput sgr0
-	exit 1
-}
-
 # Check required commands
 check_command "wget"
 
