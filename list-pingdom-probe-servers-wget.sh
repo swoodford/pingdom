@@ -3,7 +3,7 @@
 # Requires wget.
 
 # More info:
-# https://support.pingdom.com/Knowledgebase/Article/View/16/0/where-can-i-find-a-list-of-ip-addresses-for-the-pingdom-probe-servers
+# https://help.pingdom.com/hc/en-us/articles/203682601-Pingdom-probe-servers-IP-addresses
 
 function check_command {
 	type -P $1 &>/dev/null || fail "Unable to find $1, please install it and run this script again."
