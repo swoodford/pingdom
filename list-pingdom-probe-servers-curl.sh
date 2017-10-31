@@ -3,7 +3,7 @@
 # Requires curl.
 
 # More info:
-# https://support.pingdom.com/Knowledgebase/Article/View/16/0/where-can-i-find-a-list-of-ip-addresses-for-the-pingdom-probe-servers
+# https://help.pingdom.com/hc/en-us/articles/203682601-Pingdom-probe-servers-IP-addresses
 
 function check_command {
 	type -P $1 &>/dev/null || fail "Unable to find $1, please install it and run this script again."
@@ -15,4 +15,5 @@ check_command "curl"
 curl -s https://my.pingdom.com/probes/feed | \
 grep "pingdom:ip" | \
 sed -e 's|</.*||' -e 's|.*>||' | \
-sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4
+sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4 | \
+grep -v NULL
